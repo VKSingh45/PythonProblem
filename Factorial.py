@@ -1,9 +1,10 @@
-# Program using a recursive function to print factorial upto nth terms.
-
-def fact(n):
-    if(n<2):
-        return 1
-    return n*fact(n-1)
-
-n = int(input("Enter any Number : "))
-print(fact(n)) 
+num = int(input("Enter a number : "))
+fact = 1
+if num < 0:
+    print("Factorial does not exist for negative numbers")
+elif num == 0:
+    print("Factorial of 0 is 1")
+else:
+    for i in range(1, num+1):
+        fact *= i
+    print(f"The factorial of {num} is {fact}")
