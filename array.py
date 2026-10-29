@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+import numpy as np
+a=np.arange(1,20,1.5)
+b=np.log(a)
+plt. plot(a,b)
+plt.xlabel('random values')
+plt.ylabel('logarithm values')
+plt.show()
+c=np.cos(a)
+plt.plot(b,c,linestyle="dashdot")
+plt.show()
+plt.plot(a,c,'bo',linestyle='dashdot')
+plt.show()
+plt.plot(a,b,'bd')
+plt.plot(a,c,'ro')
+plt.show()
